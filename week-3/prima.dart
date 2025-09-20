@@ -1,8 +1,8 @@
 import 'dart:io';
 
 void main() {
-  stdout.write("Masukkan angka: ");
-  int angka = int.parse(stdin.readLineSync()!);
+  // stdout.write("Masukkan angka: ");
+  // int angka = int.parse(stdin.readLineSync()!);
 
   stdout.write("Masukkan jumlah angka yang ingin dicek: ");
   int n = int.parse(stdin.readLineSync()!);
