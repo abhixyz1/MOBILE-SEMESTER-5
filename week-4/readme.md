@@ -6,4 +6,4 @@ Membuat Project Flutter baru memanfaatkan terminal dengan command
 ```bash
 flutter create hello_world
 ```
-![tampilan](images\01.png)
+![tampilan](images/01.png)
