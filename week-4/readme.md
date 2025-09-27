@@ -4,4 +4,4 @@
 
 **LANGKAH 1**
 Membuat Project Flutter baru
-![tampilan](images/01.png)
+![tampilan](week-4\images\01.png)
