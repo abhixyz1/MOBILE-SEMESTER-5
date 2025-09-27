@@ -2,7 +2,6 @@
 
 ## Praktikum 1: Membuat Project Flutter Baru
 
-**LANGKAH 1**
 Membuat Project Flutter baru memanfaatkan terminal dengan command 
 ```bash
 flutter create hello_world
