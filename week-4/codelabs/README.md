@@ -64,3 +64,9 @@ linter:
 ![tampilan](images/08.gif)
 
 > Pada bagian ini, aplikasi menampilkan kata acak yang dibungkus dalam kartu (`BigCard`) di bawah label "A random AWESOME idea:", dan menyediakan tombol "Next" yang jika ditekan akan memperbarui kata acak secara otomatis. Dengan alur ini, pengguna dapat melihat ide baru setiap kali berinteraksi dengan tombol, sehingga aplikasi terasa interaktif dan tampilan kata acak menjadi lebih menarik berkat penggunaan widget kartu.
+
+**Theme and style**
+
+![tampilan](images/09.png)
+
+> Pada bagian ini, widget `BigCard` membungkus kata acak yang dihasilkan dalam sebuah kartu berwarna utama tema aplikasi, dengan padding agar tampilannya lebih menarik dan mudah dibaca. Dengan pendekatan ini, setiap kata acak yang muncul akan selalu ditampilkan secara menonjol dan konsisten mengikuti gaya visual aplikasi.
