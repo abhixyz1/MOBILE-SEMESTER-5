@@ -48,3 +48,10 @@ linter:
 ![tampilan](images/04.png)
 
 > Pada bagian ini, aplikasi menampilkan dua teks di layar: label "A random AWESOME idea:" dan kata acak yang diambil dari state, lalu menyediakan tombol "Next" yang jika ditekan akan menjalankan aksi (saat ini hanya mencetak pesan ke konsol). Dengan alur ini, pengguna dapat melihat ide kata acak dan berinteraksi melalui tombol, sehingga aplikasi terasa dinamis dan mudah dikembangkan untuk fitur selanjutnya.
+
+**Your first behavior**
+
+![tampilan](images/05.png)
+![tampilan](images/06.gif)
+
+> Pada bagian ini, aplikasi menggunakan state management dengan `ChangeNotifier` untuk menghasilkan kata acak dari package `english_words`, lalu menampilkannya di layar. Ketika tombol "Next" ditekan, fungsi `getNext()` dipanggil untuk memperbarui kata acak dan secara otomatis mengubah tampilan teks, sehingga pengguna dapat melihat ide baru setiap kali berinteraksi dengan tombol tersebut.
