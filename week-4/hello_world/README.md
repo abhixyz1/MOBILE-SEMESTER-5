@@ -69,6 +69,10 @@ Coba running project hello_world menggunakan emulator / browser / device lain de
 
 > Kode pada `main.dart` berfungsi untuk menampilkan aplikasi Flutter sederhana dengan sebuah tombol di tengah layar; ketika tombol "Show alert" ditekan, akan muncul dialog peringatan (AlertDialog) berisi pesan dan tombol OK yang dapat digunakan untuk menutup dialog tersebut, sehingga pengguna dapat berinteraksi dengan aplikasi secara lebih informatif dan responsif.
 
+**Langkah 5: Input dan Selection Widget**
 
+![tampilan](images/15.png)
+
+> Kode pada `main.dart` berfungsi untuk menampilkan aplikasi Flutter sederhana dengan sebuah kolom input (TextField) di tengah layar yang memungkinkan pengguna memasukkan nama, sehingga aplikasi ini memberikan pengalaman interaktif dan responsif bagi pengguna.
 
 
