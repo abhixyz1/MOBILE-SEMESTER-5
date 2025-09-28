@@ -56,3 +56,9 @@ Coba running project hello_world menggunakan emulator / browser / device lain de
 
 ![tampilan](images/12.png)
 > Kode pada `floating_action_button.dart` membuat aplikasi sederhana yang menampilkan sebuah tombol melayang (`FloatingActionButton`) berikon jempol berwarna pink di pojok kanan bawah yang siap menjalankan aksi saat ditekan (callback `onPressed` saat ini kosong, bisa diisi mis. untuk menampilkan Snackbar atau fungsi lain).
+
+**Langkah 3: Scaffold Widget**
+
+![tampilan](images/13.png)
+
+> Kode pada `main.dart` berfungsi sebagai aplikasi Flutter sederhana yang menampilkan angka di tengah layar, di mana setiap kali tombol melayang (FloatingActionButton) berikon tambah ditekan, angka tersebut akan bertambah satu.
