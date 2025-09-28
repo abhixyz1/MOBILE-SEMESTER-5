@@ -23,3 +23,5 @@ Menjalankan aplikasi di perangkat Android menggunakan kabel
 ![tampilan](images/04.png)
 
 ![tampilan](images/05.png)
+
+![tampilan](images/06.png)
