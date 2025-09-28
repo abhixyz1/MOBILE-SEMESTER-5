@@ -62,3 +62,13 @@ Coba running project hello_world menggunakan emulator / browser / device lain de
 ![tampilan](images/13.png)
 
 > Kode pada `main.dart` berfungsi sebagai aplikasi Flutter sederhana yang menampilkan angka di tengah layar, di mana setiap kali tombol melayang (FloatingActionButton) berikon tambah ditekan, angka tersebut akan bertambah satu.
+
+**Langkah 4: Dialog Widget**
+
+![tampilan](images/14.png)
+
+> Kode pada `main.dart` berfungsi untuk menampilkan aplikasi Flutter sederhana dengan sebuah tombol di tengah layar; ketika tombol "Show alert" ditekan, akan muncul dialog peringatan (AlertDialog) berisi pesan dan tombol OK yang dapat digunakan untuk menutup dialog tersebut, sehingga pengguna dapat berinteraksi dengan aplikasi secara lebih informatif dan responsif.
+
+
+
+
