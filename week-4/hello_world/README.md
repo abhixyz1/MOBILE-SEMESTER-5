@@ -55,4 +55,4 @@ Coba running project hello_world menggunakan emulator / browser / device lain de
 **Langkah 2: Floating Action Button (FAB)**
 
 ![tampilan](images/12.png)
-> Kode pada `floating_action_button.dart membuat aplikasi sederhana yang menampilkan sebuah tombol melayang (FloatingActionButton) berikon jempol berwarna pink di pojok kanan bawah yang siap menjalankan aksi saat ditekan (callback onPressed saat ini kosong, bisa diisi mis. untuk menampilkan Snackbar atau fungsi lain).
+> Kode pada `floating_action_button.dart` membuat aplikasi sederhana yang menampilkan sebuah tombol melayang (`FloatingActionButton`) berikon jempol berwarna pink di pojok kanan bawah yang siap menjalankan aksi saat ditekan (callback `onPressed` saat ini kosong, bisa diisi mis. untuk menampilkan Snackbar atau fungsi lain).
