@@ -33,3 +33,9 @@ Menjalankan aplikasi di perangkat Android menggunakan kabel
 Coba running project hello_world menggunakan emulator / browser / device lain dengan Teks yang ditampilkan dalam aplikasi adalah nama lengkap.
 
 ![tampilan](images/08.png)
+
+## Praktikum 4: Menerapkan Widget Dasar
+
+**Langkah 1: Text Widget**
+
+![tampilan](images/09.png)
