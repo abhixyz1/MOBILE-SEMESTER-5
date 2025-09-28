@@ -80,6 +80,6 @@ Coba running project hello_world menggunakan emulator / browser / device lain de
 
 ![tampilan](images/16.png)
 
-![tampilan](17.gif)
+![tampilan](images/17.gif)
 
 > Kode pada `main.dart` berfungsi untuk menampilkan aplikasi Flutter sederhana dengan fitur pemilihan tanggal. Saat aplikasi dijalankan, pengguna akan melihat tombol "Pilih Tanggal" di tengah layar. Ketika tombol tersebut ditekan, akan muncul dialog date picker yang memungkinkan pengguna memilih tanggal sesuai keinginan. Setelah tanggal dipilih, tanggal tersebut langsung ditampilkan di layar aplikasi. Highlight kode penting ada pada pemanggilan fungsi `showDatePicker` di dalam metode `_selectDate`, serta penggunaan `setState` untuk memperbarui tampilan tanggal yang dipilih secara realtime.
