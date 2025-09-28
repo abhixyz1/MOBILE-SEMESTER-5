@@ -39,3 +39,8 @@ Coba running project hello_world menggunakan emulator / browser / device lain de
 **Langkah 1: Text Widget**
 
 ![tampilan](images/09.png)
+
+**Langkah 2: Image Widget**
+
+![tampilan](images/10.png)
+
