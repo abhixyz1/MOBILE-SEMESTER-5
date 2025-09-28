@@ -42,3 +42,9 @@ linter:
 **First Hot Reload**
 
 ![tampilan](images/03.png)
+
+**Adding a button**
+
+![tampilan](images/04.png)
+
+> Pada bagian ini, aplikasi menampilkan dua teks di layar: label "A random AWESOME idea:" dan kata acak yang diambil dari state, lalu menyediakan tombol "Next" yang jika ditekan akan menjalankan aksi (saat ini hanya mencetak pesan ke konsol). Dengan alur ini, pengguna dapat melihat ide kata acak dan berinteraksi melalui tombol, sehingga aplikasi terasa dinamis dan mudah dikembangkan untuk fitur selanjutnya.
