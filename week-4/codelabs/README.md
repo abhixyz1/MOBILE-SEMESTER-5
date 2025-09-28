@@ -55,3 +55,12 @@ linter:
 ![tampilan](images/06.gif)
 
 > Pada bagian ini, aplikasi menggunakan state management dengan `ChangeNotifier` untuk menghasilkan kata acak dari package `english_words`, lalu menampilkannya di layar. Ketika tombol "Next" ditekan, fungsi `getNext()` dipanggil untuk memperbarui kata acak dan secara otomatis mengubah tampilan teks, sehingga pengguna dapat melihat ide baru setiap kali berinteraksi dengan tombol tersebut.
+
+## Praktikum 3: Make the app prettier
+
+**Add a Card**
+
+![tampilan](images/07.png)
+![tampilan](images/08.gif)
+
+> Pada bagian ini, aplikasi menampilkan kata acak yang dibungkus dalam kartu (`BigCard`) di bawah label "A random AWESOME idea:", dan menyediakan tombol "Next" yang jika ditekan akan memperbarui kata acak secara otomatis. Dengan alur ini, pengguna dapat melihat ide baru setiap kali berinteraksi dengan tombol, sehingga aplikasi terasa interaktif dan tampilan kata acak menjadi lebih menarik berkat penggunaan widget kartu.
