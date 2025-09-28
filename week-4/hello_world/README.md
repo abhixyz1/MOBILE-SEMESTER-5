@@ -25,3 +25,11 @@ Menjalankan aplikasi di perangkat Android menggunakan kabel
 ![tampilan](images/05.png)
 
 ![tampilan](images/06.png)
+
+## Praktikum 3: Membuat Repository GitHub dan Laporan Praktikum
+
+![tampilan](images/07.png)
+
+Coba running project hello_world menggunakan emulator / browser / device lain dengan dengan Teks yang ditampilkan dalam aplikasi adalah nama lengkap.
+
+![tampilan](images/08.png)
