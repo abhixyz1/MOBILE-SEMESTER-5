@@ -36,3 +36,9 @@ linter:
 ![tampilan](images/02.png)
 
 > Kode pada `main.dart` membangun aplikasi Flutter yang menggunakan state management dengan `provider`, di mana bagian terpenting adalah pembuatan objek `MyAppState` yang menyimpan kata acak dari package `english_words`. Widget utama (`MyHomePage`) mengambil state tersebut dan menampilkan dua teks: label dan kata acak yang selalu berubah setiap aplikasi dijalankan. Highlight kode penting ada pada penggunaan `ChangeNotifierProvider` untuk membagikan state ke seluruh aplikasi, serta pemanggilan `WordPair.random()` untuk menghasilkan kata unik secara dinamis.
+
+## Praktikum 2: Add a button
+
+**First Hot Reload**
+
+![tampilan](images/03.png)
