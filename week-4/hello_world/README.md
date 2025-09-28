@@ -51,3 +51,8 @@ Coba running project hello_world menggunakan emulator / browser / device lain de
 
 ![tampilan](images/11.png)
 > Kode pada `loading_cupertino.dart` berfungsi untuk menampilkan aplikasi Flutter sederhana yang menggunakan gaya iOS (Cupertino). Di dalamnya, terdapat sebuah tombol bergaya iOS (`CupertinoButton`) dan indikator loading (`CupertinoActivityIndicator`) yang diletakkan secara vertikal di tengah layar dengan latar belakang putih dan margin atas. Kode ini membungkus tampilan tersebut dalam sebuah aplikasi Flutter menggunakan `MaterialApp`, sehingga saat dijalankan, pengguna akan melihat tombol dan loading bar khas iOS di layar aplikasi.
+
+**Langkah 2: Floating Action Button (FAB)**
+
+![tampilan](images/12.png)
+> Kode pada `floating_action_button.dart membuat aplikasi sederhana yang menampilkan sebuah tombol melayang (FloatingActionButton) berikon jempol berwarna pink di pojok kanan bawah yang siap menjalankan aksi saat ditekan (callback onPressed saat ini kosong, bisa diisi mis. untuk menampilkan Snackbar atau fungsi lain).

@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
-void main() {
-  runApp(const LoadingCupertinoApp());
-}
-
 class LoadingCupertinoApp extends StatelessWidget {
   const LoadingCupertinoApp({Key? key}) : super(key: key);
 
