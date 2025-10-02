@@ -87,4 +87,12 @@ flutter:
 
 **Langkah 2: Tambahkan gambar ke body**
 
+Pada `main.dart` menambahkan :
+```dart
+Column(children: [
+          Image.asset('images/tumpak.jpeg', width: 500, height: 240, fit: BoxFit.cover),titleSection, buttonSection, textSection])
+```
+
+![tampilan](images/10.png)
+
 **Langkah 3: Terakhir, ubah menjadi ListView**
