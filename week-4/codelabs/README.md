@@ -69,4 +69,4 @@ linter:
 
 ![tampilan](images/09.png)
 
-> Pada bagian ini, widget `BigCard` membungkus kata acak yang dihasilkan dalam sebuah kartu berwarna utama tema aplikasi, dengan padding agar tampilannya lebih menarik dan mudah dibaca. Dengan pendekatan ini, setiap kata acak yang muncul akan selalu ditampilkan secara menonjol dan konsisten mengikuti gaya visual aplikasi.
+> Pada bagian ini, widget `BigCard` membungkus kata acak yang dihasilkan dalam sebuah kartu berwarna utama tema aplikasi, dengan padding agar tampilannya lebih menarik dan mudah dibaca. Dengan pendekatan ini, setiap kata acak yang muncul akan selalu ditampilkan secara menonjol dan konsisten mengikuti gaya visual aplikasi. 
