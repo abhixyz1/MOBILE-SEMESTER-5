@@ -83,7 +83,7 @@ Pada `pubspec.yaml` menambahkan kode :
 flutter:
   assets:
     - images/tumpak.jpeg
-    ```
+```
 
 **Langkah 2: Tambahkan gambar ke body**
 
