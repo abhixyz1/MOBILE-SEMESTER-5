@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(const MyApp());
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     Widget titleSection = Container(
-      padding: const EdgeInsets.all(32),
+      padding: const EdgeInsets.all(32), // padding di sepanjang sisi
       child: Row(
         children: [
           Expanded(
+            // Soal 1: Column di dalam Expanded
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start, // Soal 1
+              crossAxisAlignment: CrossAxisAlignment.start, // posisi ke kiri
               children: [
+                // Soal 2: teks pertama di dalam Container dengan padding bawah 8
                 Container(
-                  padding: const EdgeInsets.only(bottom: 8), // Soal 2
+                  padding: const EdgeInsets.only(bottom: 8),
                   child: const Text(
                     'Wisata Gunung di Batu',
                     style: TextStyle(
@@ -27,16 +27,18 @@ class MyApp extends StatelessWidget {
                 const Text(
                   'Batu, Malang, Indonesia',
                   style: TextStyle(
-                    color: Colors.grey, // Soal 2
+                    color: Colors.grey, // warna abu-abu
                   ),
                 ),
               ],
             ),
           ),
-          const Icon( // Soal 3
+          // Soal 3: Icon bintang merah + teks "41"
+          const Icon(
             Icons.star,
             color: Colors.red,
           ),
+          const SizedBox(width: 4),
           const Text('41'),
         ],
       ),
@@ -48,7 +50,11 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Flutter layout demo'),
         ),
-        body: titleSection, // Gunakan titleSection di sini
+        body: Column(
+          children: [
+            titleSection, // ganti "Hello World" dengan titleSection
+          ],
+        ),
       ),
     );
   }
