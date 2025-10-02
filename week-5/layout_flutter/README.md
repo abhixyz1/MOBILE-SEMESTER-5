@@ -35,3 +35,10 @@ class MyApp extends StatelessWidget {
 
 ![tampilan](images/01.png)
 
+**Langkah 4: Implementasi title row**
+
+![tampilan](images/02.png)
+> Pada bagian ini, kode membangun layout horizontal berisi informasi wisata dengan tiga poin utama:  
+> **(1)** Mengatur posisi teks judul dan subjudul ke kiri menggunakan `crossAxisAlignment: CrossAxisAlignment.start` pada widget `Column`,  
+> **(2)** Memberikan jarak bawah pada judul dan menampilkan subjudul dengan warna abu-abu agar tampilan lebih rapi dan informatif,  
+> **(3)** Menambahkan ikon bintang berwarna merah dan angka "41" di sebelah kanan untuk menunjukkan rating atau jumlah favorit, sehingga keseluruhan tampilan menjadi lebih menarik dan mudah dipahami oleh pengguna.
