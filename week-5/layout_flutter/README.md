@@ -72,3 +72,19 @@ class MyApp extends StatelessWidget {
 ![tampilan](images/08.png)
 
 ## Praktikum 4: Implementasi image section
+
+**Langkah 1: Siapkan aset gambar**
+
+![tampilan](images/09.png)
+
+Pada `pubspec.yaml` menambahkan kode :
+
+```yaml
+flutter:
+  assets:
+    - images/tumpak.jpeg
+    ```
+
+**Langkah 2: Tambahkan gambar ke body**
+
+**Langkah 3: Terakhir, ubah menjadi ListView**
