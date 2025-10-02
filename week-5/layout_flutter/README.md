@@ -56,3 +56,9 @@ class MyApp extends StatelessWidget {
 ![tampilan](images/05.png)
 
 > Widget `buttonSection` berfungsi untuk menampilkan tiga tombol aksi secara horizontal dan sejajar, masing-masing dengan ikon dan label berbeda (CALL, ROUTE, SHARE), serta warna yang konsisten dengan tema aplikasi. Dengan penataan menggunakan `mainAxisAlignment: spaceEvenly`, setiap tombol memiliki jarak yang sama sehingga tampilan baris tombol menjadi rapi, mudah diakses, dan memperkuat interaksi pengguna pada aplikasi.
+
+**Langkah 3: Tambah button section ke body**
+
+![tampilan](images/06.png)
+
+> Pada file `main.dart` terbaru, aplikasi Flutter menampilkan layout wisata dengan judul, lokasi, ikon bintang merah, dan angka rating secara horizontal di bagian atas, diikuti baris tiga tombol aksi (CALL, ROUTE, SHARE) yang tersusun rapi dan sejajar. Seluruh tampilan ini dibangun menggunakan kombinasi widget `Row`, `Column`, dan `Expanded` agar responsif dan mudah dibaca. Selain itu, terdapat halaman lain yang menampilkan fitur counter sederhana, di mana pengguna dapat menambah angka dengan menekan tombol tambah di kanan bawah. Dengan struktur ini, aplikasi terasa interaktif, informatif, dan desainnya konsisten mengikuti standar Flutter modern.
