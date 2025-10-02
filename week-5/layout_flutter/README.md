@@ -93,6 +93,10 @@ Column(children: [
           Image.asset('images/tumpak.jpeg', width: 500, height: 240, fit: BoxFit.cover),titleSection, buttonSection, textSection])
 ```
 
-![tampilan](images/10.png)
+![tampilan](images/11.png)
 
 **Langkah 3: Terakhir, ubah menjadi ListView**
+
+![tampilan](images/12.png)
+
+> Pada bagian ini, aplikasi Flutter menampilkan halaman utama dengan AppBar berjudul "Flutter layout demo" dan isi berupa gambar destinasi wisata, baris judul yang informatif, tiga tombol aksi yang tersusun rapi, serta deskripsi lengkap tentang Air Terjun Tumpak Sewu. Semua elemen ditata menggunakan `ListView` agar tampilan dapat di-scroll dengan nyaman, sehingga pengguna bisa menikmati informasi dan fitur aplikasi secara lebih interaktif dan responsif.
