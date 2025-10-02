@@ -2,7 +2,8 @@
 
 ## Praktikum 1: Membangun Layout di Flutter
 
-Pertama membuat Project Flutter baru memanfaatkan terminal dengan command 
+**Langkah 1: Buat Project Baru**
+Membuat Project Flutter baru memanfaatkan terminal dengan command 
 ```bash
 flutter create layout_flutter
 ```
