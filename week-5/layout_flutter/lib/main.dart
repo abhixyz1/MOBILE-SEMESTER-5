@@ -58,10 +58,10 @@ class MyApp extends StatelessWidget {
       padding: const EdgeInsets.all(32),
       child: const Text(
         'Destinasi wisata alam seperti air terjun dapat menjadi tujuan berlibur saat akhir pekan. '
-        'Pemandangan yang indah dan suasana yang sejuk mampu membuat tubuh dan pikiran menjadi lebih segar. '
+        'Pemandangan yang indah dan suasana yang sejuk mampu membuat tubuh dan pikiran menjadi lebih segar. \n'
         'Salah satu air terjun yang populer adalah Air Terjun Tumpak Sewu yang berada di lereng Gunung Semeru, Kabupaten Lumajang. '
-        'Air terjun ini juga berada di perbatasan Kabupaten Malang dan Kabupaten Lumajang. Sehingga banyak yang mengira air terjun ini berada di Malang. '
-        'Air terjun ini dinamakan Tumpak Sewu karena memiliki banyak sumber mata air. Ketinggiannya mencapai 120 meter.'
+        'Air terjun ini juga berada di perbatasan Kabupaten Malang dan Kabupaten Lumajang. Sehingga banyak yang mengira air terjun ini berada di Malang.\n '
+        'Air terjun ini dinamakan Tumpak Sewu karena memiliki banyak sumber mata air. Ketinggiannya mencapai 120 meter.\n'
         'Nama : Muhammad Abhinaya Zurfa\nNim : 2341760186',
         softWrap: true,
       ),
@@ -71,7 +71,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter layout: Muhammad Abhinaya Zurfa | 2341760186',
       home: Scaffold(
         appBar: AppBar(title: const Text('Flutter layout demo')),
-        body: Column(children: [titleSection, buttonSection]),
+        body: Column(children: [titleSection, buttonSection, textSection]),
       ),
     );
   }

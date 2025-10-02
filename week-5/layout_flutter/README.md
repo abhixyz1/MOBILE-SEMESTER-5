@@ -68,4 +68,7 @@ class MyApp extends StatelessWidget {
 
 ![tampilan](images/07.png)
 **Langkah 2: Tambahkan variabel text section ke body**
+
+![tampilan](images/08.png)
+
 ## Praktikum 4: Implementasi image section
