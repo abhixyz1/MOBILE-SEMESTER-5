@@ -9,3 +9,29 @@ flutter create layout_flutter
 ```
 
 ![tampilan](images/00.png)
+
+**Langkah 2: Buka file lib/main.dart**
+
+```dart
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter layout: Muhammad Abhinaya Zurfa | 2341760186',
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Flutter layout demo'),
+        ),
+        body: const Center(
+          child: Text('Hello World'),
+        ),
+      ),
+    );
+  }
+}
+```
+
+![tampilan](images/01.png)
+
