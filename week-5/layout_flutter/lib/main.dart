@@ -22,12 +22,12 @@ class MyApp extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: const Text(
-                    'Wisata Gunung di Batu',
+                    'Air Terjun Tumpak Sewu',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
                 const Text(
-                  'Batu, Malang, Indonesia',
+                  'Lumajang, Jawa Timur, Indonesia',
                   style: TextStyle(
                     color: Colors.grey, // warna abu-abu
                   ),
@@ -52,6 +52,19 @@ class MyApp extends StatelessWidget {
         _buildButtonColumn(color, Icons.near_me, 'ROUTE'),
         _buildButtonColumn(color, Icons.share, 'SHARE'),
       ],
+    );
+
+    Widget textSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        'Destinasi wisata alam seperti air terjun dapat menjadi tujuan berlibur saat akhir pekan. '
+        'Pemandangan yang indah dan suasana yang sejuk mampu membuat tubuh dan pikiran menjadi lebih segar. '
+        'Salah satu air terjun yang populer adalah Air Terjun Tumpak Sewu yang berada di lereng Gunung Semeru, Kabupaten Lumajang. '
+        'Air terjun ini juga berada di perbatasan Kabupaten Malang dan Kabupaten Lumajang. Sehingga banyak yang mengira air terjun ini berada di Malang. '
+        'Air terjun ini dinamakan Tumpak Sewu karena memiliki banyak sumber mata air. Ketinggiannya mencapai 120 meter.'
+        'Nama : Muhammad Abhinaya Zurfa\nNim : 2341760186',
+        softWrap: true,
+      ),
     );
 
     return MaterialApp(

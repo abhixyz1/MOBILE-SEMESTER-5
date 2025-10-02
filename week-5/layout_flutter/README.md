@@ -62,3 +62,10 @@ class MyApp extends StatelessWidget {
 ![tampilan](images/06.png)
 
 > Pada file `main.dart` terbaru, aplikasi Flutter menampilkan layout wisata dengan judul, lokasi, ikon bintang merah, dan angka rating secara horizontal di bagian atas, diikuti baris tiga tombol aksi (CALL, ROUTE, SHARE) yang tersusun rapi dan sejajar. Seluruh tampilan ini dibangun menggunakan kombinasi widget `Row`, `Column`, dan `Expanded` agar responsif dan mudah dibaca. Selain itu, terdapat halaman lain yang menampilkan fitur counter sederhana, di mana pengguna dapat menambah angka dengan menekan tombol tambah di kanan bawah. Dengan struktur ini, aplikasi terasa interaktif, informatif, dan desainnya konsisten mengikuti standar Flutter modern.
+
+## Praktikum 3: Implementasi text section
+**Langkah 1: Buat widget textSection**
+
+![tampilan](images/07.png)
+**Langkah 2: Tambahkan variabel text section ke body**
+## Praktikum 4: Implementasi image section
