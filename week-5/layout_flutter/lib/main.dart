@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp()); 
+  runApp(const MyApp());
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -22,9 +23,7 @@ class MyApp extends StatelessWidget {
                   padding: const EdgeInsets.only(bottom: 8),
                   child: const Text(
                     'Wisata Gunung di Batu',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
                 const Text(
@@ -37,27 +36,29 @@ class MyApp extends StatelessWidget {
             ),
           ),
           // Soal 3: Icon bintang merah + teks "41"
-          const Icon(
-            Icons.star,
-            color: Colors.red,
-          ),
+          const Icon(Icons.star, color: Colors.red),
           const SizedBox(width: 4),
           const Text('41'),
         ],
       ),
     );
 
+    Color color = Theme.of(context).primaryColor;
+
+    Widget buttonSection = Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        _buildButtonColumn(color, Icons.call, 'CALL'),
+        _buildButtonColumn(color, Icons.near_me, 'ROUTE'),
+        _buildButtonColumn(color, Icons.share, 'SHARE'),
+      ],
+    );
+
     return MaterialApp(
       title: 'Flutter layout: Muhammad Abhinaya Zurfa | 2341760186',
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Flutter layout demo'),
-        ),
-        body: Column(
-          children: [
-            titleSection,
-          ],
-        ),
+        appBar: AppBar(title: const Text('Flutter layout demo')),
+        body: Column(children: [titleSection]),
       ),
     );
   }
