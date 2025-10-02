@@ -42,3 +42,11 @@ class MyApp extends StatelessWidget {
 > **(1)** Mengatur posisi teks judul dan subjudul ke kiri menggunakan `crossAxisAlignment: CrossAxisAlignment.start` pada widget `Column`,  
 > **(2)** Memberikan jarak bawah pada judul dan menampilkan subjudul dengan warna abu-abu agar tampilan lebih rapi dan informatif,  
 > **(3)** Menambahkan ikon bintang berwarna merah dan angka "41" di sebelah kanan untuk menunjukkan rating atau jumlah favorit, sehingga keseluruhan tampilan menjadi lebih menarik dan mudah dipahami oleh pengguna.
+
+## Praktikum 2: Implementasi button row
+
+**Langkah 1: Buat method Column _buildButtonColumn**
+
+![tampilan](images/04.png)
+
+> Fungsi `_buildButtonColumn` digunakan untuk membuat tombol vertikal yang terdiri dari ikon dan label di bawahnya, dengan warna dan ikon yang bisa disesuaikan. Setiap tombol memiliki jarak antar label dan ikon, serta desain yang konsisten, sehingga saat dipanggil di layout aplikasi, baris tombol akan tampil rapi dan mudah diakses oleh pengguna untuk berbagai aksi seperti call, route, atau share.
