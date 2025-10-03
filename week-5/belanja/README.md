@@ -32,3 +32,20 @@ class ItemPage extends StatelessWidget {
   }
 }
 ```
+
+**Langkah 3: Lengkapi Kode di main.dart**
+
+Pada `main.dart` tambahkan kode
+```dart
+void main() {
+  runApp(MaterialApp(
+    initialRoute: '/',
+    routes: {
+      '/': (context) => HomePage(),
+      '/item': (context) => ItemPage(),
+    },
+  )); // MaterialApp
+}
+```
+
+>Untuk mendefinisikan navigasi antar halaman
