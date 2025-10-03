@@ -1,16 +1,34 @@
-# belanja
+# LAPORAN JOBSHEET FLUTTER 2
 
-A new Flutter project.
+## Praktikum 5: Membangun Navigasi di Flutter
 
-## Getting Started
+**Langkah 1: Buat Project Baru**
 
-This project is a starting point for a Flutter application.
+Membuat Project Flutter baru memanfaatkan terminal dengan command 
+```bash
+flutter create belanja
+```
 
-A few resources to get you started if this is your first Flutter project:
+![tampilan](images/00.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+**Langkah 2: Mendefinisikan Route**
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+`home_page.dart` diisi kode
+```dart
+class HomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    throw UnimplementedError();
+  }
+}
+```
+
+`item_page.dart` diisi kode
+```dart
+class ItemPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    throw UnimplementedError();
+  }
+}
+```
