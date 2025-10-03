@@ -49,3 +49,18 @@ void main() {
 ```
 
 >Untuk mendefinisikan navigasi antar halaman
+
+**Langkah 4: Membuat data model**
+
+Membuat folder baru bernama models dan menambahkan file baru `item.dart`
+
+```dart
+class Item {
+  String name;
+  int price;
+
+  Item({required this.name, required this.price});
+}
+```
+
+> Class `Item` adalah data model sederhana yang digunakan untuk merepresentasikan sebuah barang dengan dua properti utama, yaitu `name` (nama barang) dan `price` (harga barang). Keduanya bertipe data non-nullable dan wajib diisi melalui konstruktor dengan parameter `required`, sehingga setiap objek `Item` yang dibuat pasti memiliki nama dan harga yang valid sesuai kebutuhan aplikasi.
