@@ -108,3 +108,19 @@ final List<Item> items = [
 ![tampilan](images/001.gif)
 
 > Pada perubahan terakhir, aplikasi belanja kini menampilkan daftar produk dalam bentuk GridView dua kolom, mirip tampilan marketplace modern. Setiap produk memiliki atribut lengkap: nama, harga, gambar, stok, dan rating, yang ditampilkan secara visual pada kartu produk. Ketika pengguna menekan salah satu produk, aplikasi akan menampilkan halaman detail produk dengan informasi yang lebih lengkap, termasuk foto, harga, rating, dan stok. Semua gambar produk sudah didaftarkan di pubspec.yaml sehingga dapat ditampilkan tanpa error. Perubahan ini membuat aplikasi lebih informatif, interaktif, dan menarik secara tampilan.
+
+**Mengimplementsikan Hero Widget**
+
+![tampilan](images/06.png)
+
+![tampilan](images/002.gif)
+
+> Pada perubahan terakhir, kode aplikasi belanja sudah menerapkan **Hero widget** pada gambar produk di halaman utama (`HomePage`) dan halaman detail produk (`ItemPage`). Hero widget menggunakan tag unik berdasarkan nama produk, sehingga saat pengguna menekan salah satu produk di grid, gambar produk akan bertransisi secara animasi ke halaman detail. Selain itu, tampilan produk di grid sudah menampilkan gambar, nama, harga, rating, dan stok secara rapi, serta detail produk di halaman berikutnya juga menampilkan informasi lengkap dengan desain yang konsisten. Penambahan Hero widget ini membuat navigasi antar halaman terasa lebih smooth dan profesional, menyerupai aplikasi marketplace modern.
+
+**Modifikasi tampilan**
+
+![tampilan](images/07.png)
+
+![tampilan](images/003.gif)
+
+> Pada perubahan terakhir, aplikasi belanja telah mengalami peningkatan signifikan dalam hal struktur kode dan tampilan. Pertama, aplikasi kini menggunakan **go_router** sebagai sistem navigasi modern yang lebih type-safe dan mudah dikelola dibandingkan Navigator tradisional. Kedua, kode dipecah menjadi widget-widget kecil yang lebih terorganisir, seperti **ProductCard** untuk menampilkan kartu produk dan **Footer** untuk menampilkan informasi nama dan NIM di bagian bawah aplikasi. Ketiga, tampilan visual ditingkatkan dengan penggunaan **Hero widget** untuk animasi transisi gambar yang smooth antara halaman utama dan detail produk, serta penambahan **border radius, elevation, dan warna yang konsisten** pada setiap elemen UI. Keempat, halaman detail produk kini menampilkan informasi lengkap dengan layout yang lebih informatif, termasuk rating dan stok dalam container yang terpisah dengan desain yang rapi. Terakhir, **footer dengan nama "Muhammad Abhinaya Zurfa" dan NIM "2341760186"** ditambahkan di bagian bawah setiap halaman dengan background berwarna biru, memberikan identitas pada aplikasi. Secara keseluruhan, perubahan ini membuat aplikasi lebih profesional, mudah dipelihara, dan memberikan pengalaman pengguna yang lebih baik mirip dengan aplikasi marketplace modern.

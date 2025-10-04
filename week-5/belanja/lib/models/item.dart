@@ -6,10 +6,10 @@ class Item {
   double rating;
 
   Item({
-    required this.name, 
-    required this.price, 
-    required this.image, 
-    required this.stock, 
-    required this.rating
+    required this.name,
+    required this.price,
+    required this.image,
+    required this.stock,
+    required this.rating,
   });
 }
