@@ -87,3 +87,9 @@ final List<Item> items = [
 **Langkah 7: Menambahkan aksi pada ListView**
 
 ![tampilan](images/02.png)
+
+
+## Tugas Praktikum 2
+**Menambahkan informasi arguments pada penggunaan Navigator**
+
+![tampilan](images/03.png)
