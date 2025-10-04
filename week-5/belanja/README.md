@@ -100,3 +100,11 @@ final List<Item> items = [
 ![tampilan](images/000.gif)
 
 > Kode `final itemArgs = ModalRoute.of(context)!.settings.arguments as Item;` digunakan untuk mengambil data yang dikirim dari halaman sebelumnya melalui navigator. Dengan cara ini, Anda bisa mengakses objek `Item` yang dipilih pada halaman utama dan menampilkan detailnya di halaman `ItemPage`. Data yang diterima dapat digunakan seperti variabel biasa untuk menampilkan nama dan harga barang.
+
+**Menambahkan atibut foto produk, stok dan rating. Ubah menjadi GridView**
+
+![tampilan](images/05.png)
+
+![tampilan](images/001.gif)
+
+> Pada perubahan terakhir, aplikasi belanja kini menampilkan daftar produk dalam bentuk GridView dua kolom, mirip tampilan marketplace modern. Setiap produk memiliki atribut lengkap: nama, harga, gambar, stok, dan rating, yang ditampilkan secara visual pada kartu produk. Ketika pengguna menekan salah satu produk, aplikasi akan menampilkan halaman detail produk dengan informasi yang lebih lengkap, termasuk foto, harga, rating, dan stok. Semua gambar produk sudah didaftarkan di pubspec.yaml sehingga dapat ditampilkan tanpa error. Perubahan ini membuat aplikasi lebih informatif, interaktif, dan menarik secara tampilan.
