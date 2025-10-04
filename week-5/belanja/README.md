@@ -83,3 +83,7 @@ final List<Item> items = [
 ![tampilan](images/01.png)
 
 > Pada kode ini, halaman utama aplikasi belanja menampilkan daftar barang menggunakan `ListView.builder`, sehingga setiap item seperti "Sugar" dan "Salt" ditampilkan dalam bentuk kartu yang rapi. Judul halaman "Shopping List" muncul di bagian atas dengan latar belakang biru berkat pengaturan `backgroundColor` pada `AppBar`, membuat tampilan lebih menarik dan mudah dikenali oleh pengguna.
+
+**Langkah 7: Menambahkan aksi pada ListView**
+
+![tampilan](images/02.png)
