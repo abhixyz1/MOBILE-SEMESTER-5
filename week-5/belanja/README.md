@@ -93,3 +93,10 @@ final List<Item> items = [
 **Menambahkan informasi arguments pada penggunaan Navigator**
 
 ![tampilan](images/03.png)
+
+**Menambahkan ModalRoute pada blok fungsi build dalam halaman Item Page**
+
+![tampilan](images/04.png)
+![tampilan](images/000.gif)
+
+> Kode `final itemArgs = ModalRoute.of(context)!.settings.arguments as Item;` digunakan untuk mengambil data yang dikirim dari halaman sebelumnya melalui navigator. Dengan cara ini, Anda bisa mengakses objek `Item` yang dipilih pada halaman utama dan menampilkan detailnya di halaman `ItemPage`. Data yang diterima dapat digunakan seperti variabel biasa untuk menampilkan nama dan harga barang.
