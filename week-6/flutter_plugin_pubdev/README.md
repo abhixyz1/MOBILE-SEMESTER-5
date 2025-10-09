@@ -21,3 +21,9 @@ flutter pub add auto_size_text
 pada `pubspec.yaml` berubah kodenya menjadi
 
 ![tampilan](images/02.png)
+
+**Langkah 3: Buat file red_text_widget.dart**
+
+Membuat file baru bernama `red_text_widget.dart`
+
+![tampilan](images/03.png)
