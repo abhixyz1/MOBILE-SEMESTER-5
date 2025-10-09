@@ -40,3 +40,13 @@ return AutoSizeText(
       overflow: TextOverflow.ellipsis,
 );
 ```
+
+**Langkah 5: Buat Variabel text dan parameter di constructor**
+
+![tampilan](images/04.png)
+
+**Langkah 6: Tambahkan widget di main.dart**
+
+![tampilan](images/05.png)
+
+> Pada perubahan terakhir, telah mencoba membuat custom widget bernama **RedTextWidget** yang memanfaatkan plugin `auto_size_text` dari pub.dev. Widget ini digunakan untuk menampilkan teks berwarna merah yang otomatis menyesuaikan ukuran font agar tetap muat dalam dua baris, dengan overflow berupa ellipsis jika terlalu panjang. RedTextWidget kemudian digunakan di halaman utama aplikasi, berdampingan dengan widget `Text` biasa, sehingga pengguna dapat membandingkan tampilan dan perilaku keduanya. Selain itu, struktur kode tetap mengikuti pola Flutter standar dengan penggunaan `StatefulWidget` untuk counter dan penempatan widget custom di dalam widget tree. Perubahan ini membuat aplikasi lebih modular, mudah dikembangkan, dan memperlihatkan pemanfaatan plugin eksternal untuk kebutuhan UI khusus.
