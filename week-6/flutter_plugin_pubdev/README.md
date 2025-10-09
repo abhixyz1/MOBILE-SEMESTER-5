@@ -27,3 +27,16 @@ pada `pubspec.yaml` berubah kodenya menjadi
 Membuat file baru bernama `red_text_widget.dart`
 
 ![tampilan](images/03.png)
+
+**Langkah 4: Tambah Widget AutoSizeText**
+
+Modifikasi pada `red_text_widget.dart`
+
+```dart
+return AutoSizeText(
+      text,
+      style: const TextStyle(color: Colors.red, fontSize: 14),
+      maxLines: 2,
+      overflow: TextOverflow.ellipsis,
+);
+```
