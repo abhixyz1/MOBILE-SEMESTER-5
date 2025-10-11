@@ -65,7 +65,7 @@ return AutoSizeText(
 
 > Potongan kode tersebut berisi dua buah `Container` yang masing-masing membungkus widget teks. Container pertama menggunakan widget custom `RedTextWidget` (yang menampilkan teks berwarna merah dan otomatis menyesuaikan ukuran font), dengan latar belakang kuning dan lebar 50 piksel. Container kedua menggunakan widget `Text` biasa, dengan latar belakang hijau muda dan lebar 100 piksel. Keduanya menampilkan pesan yang sama. Tujuannya adalah agar bisa melihat perbedaan tampilan dan perilaku antara teks biasa dan teks yang menggunakan plugin `auto_size_text` secara berdampingan, sehingga lebih mudah memahami manfaat penggunaan plugin tersebut dalam aplikasi Flutter.
 
-**4. Jelaskan maksud dari tiap parameter yang ada di dalam plugin auto_size_text berdasarkan tautan pada dokumentasi [disini](https://pub.dev/documentation/auto_size_text/latest/)** */
+**4. Jelaskan maksud dari tiap parameter yang ada di dalam plugin auto_size_text berdasarkan tautan pada dokumentasi [disini](https://pub.dev/documentation/auto_size_text/latest/)**
 
 >
 > - **key**: Digunakan untuk mengidentifikasi widget di dalam tree Flutter, biasanya untuk keperluan update atau animasi.
