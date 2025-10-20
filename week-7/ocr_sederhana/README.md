@@ -24,9 +24,20 @@ dan jalankan
 flutter pub get
 ````
 
+
+![tampilan](images/02.png)
+
 **Langkah 3: Tambahkan Izin Kamera (Android)**
 
 pada `AndroidManifest.xml`
 ```xml
 <uses - permission android:name =" android . permission . CAMERA " />
 ```
+
+**Langkah 4: Buat Struktur Folder**
+
+![tampilan](images/01.png)
+
+**Langkah 5: Kode Program**
+
+Menambahkan kode pada File `lib/main.dart`,`lib/screens/splash screen.dart`,`lib/screens/home_screen.dart`,`lib/screens/scan_screen.dart`,`lib/screens/result_screen.dart`,
