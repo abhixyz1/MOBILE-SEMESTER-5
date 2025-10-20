@@ -17,7 +17,7 @@ class ScanScreen extends StatefulWidget {
 
 class _ScanScreenState extends State<ScanScreen> {
   late CameraController _controller;
-  late Future<void> _initializeControllerFuture;
+  bool _isInitialized = false;
 
   @override
   void initState() {
@@ -25,12 +25,28 @@ class _ScanScreenState extends State<ScanScreen> {
     _initCamera();
   }
 
-  void _initCamera() async {
-    cameras = await availableCameras();
-    _controller = CameraController(cameras[0], ResolutionPreset.medium);
-    _initializeControllerFuture = _controller.initialize();
-    if (mounted) {
-      setState(() {});
+  Future<void> _initCamera() async {
+    try {
+      cameras = await availableCameras();
+      if (cameras.isEmpty) {
+        print('No cameras available');
+        return;
+      }
+      
+      _controller = CameraController(
+        cameras[0],
+        ResolutionPreset.medium,
+      );
+      
+      await _controller.initialize();
+      
+      if (mounted) {
+        setState(() {
+          _isInitialized = true;
+        });
+      }
+    } catch (e) {
+      print('Error initializing camera: $e');
     }
   }
 
@@ -40,62 +56,70 @@ class _ScanScreenState extends State<ScanScreen> {
     super.dispose();
   }
 
-  Future<String> _ocrFromFile(File imageFile) async {
-    final inputImage = InputImage.fromFile(imageFile);
-    final textRecognizer = TextRecognizer(script: TextRecognitionScript.latin);
-    final RecognizedText recognizedText =
-        await textRecognizer.processImage(inputImage);
-    textRecognizer.close();
-    return recognizedText.text;
-  }
-
   Future<void> _takePicture() async {
     try {
-      await _initializeControllerFuture;
+      if (!_controller.value.isInitialized) {
+        return;
+      }
 
-      if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Memproses OCR, mohon tunggu...'),
-          duration: Duration(seconds: 2),
-        ),
+      final directory = await getTemporaryDirectory();
+      final imagePath = path.join(
+        directory.path,
+        '${DateTime.now().millisecondsSinceEpoch}.png',
       );
 
-      final XFile image = await _controller.takePicture();
-      final ocrText = await _ocrFromFile(File(image.path));
+      final image = await _controller.takePicture();
+      await File(image.path).copy(imagePath);
 
-      if (!mounted) return;
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (_) => ResultScreen(ocrText: ocrText),
-        ),
-      );
+      final inputImage = InputImage.fromFilePath(imagePath);
+      final textRecognizer = TextRecognizer();
+      final RecognizedText recognizedText =
+          await textRecognizer.processImage(inputImage);
+
+      textRecognizer.close();
+
+      if (mounted) {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => ResultScreen(
+              imagePath: imagePath,
+              recognizedText: recognizedText.text,
+            ),
+          ),
+        );
+      }
     } catch (e) {
-      if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error saat mengambil/memproses foto: $e')),
-      );
+      print('Error taking picture: $e');
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error: ${e.toString()}')),
+        );
+      }
     }
   }
 
   @override
   Widget build(BuildContext context) {
-    if (!_controller.value.isInitialized) {
-      return const Scaffold(
-        body: Center(child: CircularProgressIndicator()),
+    if (!_isInitialized) {
+      return Scaffold(
+        appBar: AppBar(
+          title: const Text('Scan Document'),
+        ),
+        body: const Center(
+          child: CircularProgressIndicator(),
+        ),
       );
     }
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Kamera OCR')),
+      appBar: AppBar(
+        title: const Text('Scan Document'),
+      ),
       body: Column(
         children: [
           Expanded(
-            child: AspectRatio(
-              aspectRatio: _controller.value.aspectRatio,
-              child: CameraPreview(_controller),
-            ),
+            child: CameraPreview(_controller),
           ),
           Padding(
             padding: const EdgeInsets.all(16.0),
@@ -103,6 +127,9 @@ class _ScanScreenState extends State<ScanScreen> {
               onPressed: _takePicture,
               icon: const Icon(Icons.camera),
               label: const Text('Ambil Foto & Scan'),
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+              ),
             ),
           ),
         ],
