@@ -34,10 +34,31 @@ pada `AndroidManifest.xml`
 <uses - permission android:name =" android . permission . CAMERA " />
 ```
 
+![tampilan](images/03.png)
+
 **Langkah 4: Buat Struktur Folder**
 
 ![tampilan](images/01.png)
 
 **Langkah 5: Kode Program**
 
-Menambahkan kode pada File `lib/main.dart`,`lib/screens/splash screen.dart`,`lib/screens/home_screen.dart`,`lib/screens/scan_screen.dart`,`lib/screens/result_screen.dart`,
+Menambahkan kode pada File `lib/main.dart`
+
+![tampilan](images/04.png)
+
+`lib/screens/home_screen.dart`
+
+![tampilan](images/05.png)
+
+`lib/screens/result_screen.dart`
+
+![tampilan](images/06.png)
+
+`lib/screens/scan_screen.dart`
+
+![tampilan](images/07.png)
+
+`lib/screens/splash screen.dart`
+
+![tampilan](images/08.png)
+
