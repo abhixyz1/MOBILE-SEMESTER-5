@@ -23,3 +23,10 @@ dan jalankan
 ```bash
 flutter pub get
 ````
+
+**Langkah 3: Tambahkan Izin Kamera (Android)**
+
+pada `AndroidManifest.xml`
+```xml
+<uses - permission android:name =" android . permission . CAMERA " />
+```
