@@ -29,24 +29,24 @@ class _ScanScreenState extends State<ScanScreen> {
     try {
       cameras = await availableCameras();
       if (cameras.isEmpty) {
-        print('No cameras available');
+        debugPrint('No cameras available');
         return;
       }
-      
+
       _controller = CameraController(
         cameras[0],
         ResolutionPreset.medium,
       );
-      
+
       await _controller.initialize();
-      
+
       if (mounted) {
         setState(() {
           _isInitialized = true;
         });
       }
     } catch (e) {
-      print('Error initializing camera: $e');
+      debugPrint('Error initializing camera: $e');
     }
   }
 
@@ -76,7 +76,7 @@ class _ScanScreenState extends State<ScanScreen> {
       final RecognizedText recognizedText =
           await textRecognizer.processImage(inputImage);
 
-      textRecognizer.close();
+      await textRecognizer.close();
 
       if (mounted) {
         Navigator.push(
@@ -89,13 +89,14 @@ class _ScanScreenState extends State<ScanScreen> {
           ),
         );
       }
-    } catch (e) {
-      print('Error taking picture: $e');
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Error: ${e.toString()}')),
-        );
-      }
+    } catch (_) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content:
+              Text('Pemindaian Gagal! Periksa Izin Kamera atau coba lagi.'),
+        ),
+      );
     }
   }
 
@@ -103,11 +104,23 @@ class _ScanScreenState extends State<ScanScreen> {
   Widget build(BuildContext context) {
     if (!_isInitialized) {
       return Scaffold(
+        backgroundColor: Colors.grey[900],
         appBar: AppBar(
           title: const Text('Scan Document'),
+          backgroundColor: Colors.black,
         ),
-        body: const Center(
-          child: CircularProgressIndicator(),
+        body: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: const [
+              CircularProgressIndicator(color: Colors.yellow),
+              SizedBox(height: 16),
+              Text(
+                'Memuat Kamera... Harap tunggu.',
+                style: TextStyle(color: Colors.white, fontSize: 18),
+              ),
+            ],
+          ),
         ),
       );
     }
@@ -128,7 +141,8 @@ class _ScanScreenState extends State<ScanScreen> {
               icon: const Icon(Icons.camera),
               label: const Text('Ambil Foto & Scan'),
               style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
               ),
             ),
           ),
