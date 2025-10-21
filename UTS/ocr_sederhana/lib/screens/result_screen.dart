@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'home_screen.dart';
 
 class ResultScreen extends StatelessWidget {
   final String imagePath;
@@ -22,7 +23,7 @@ class ResultScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Tampilkan gambar yang di-scan
+            // Gambar hasil scan
             ClipRRect(
               borderRadius: BorderRadius.circular(12),
               child: Image.file(
@@ -32,7 +33,7 @@ class ResultScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 24),
-            
+
             // Judul hasil OCR
             const Text(
               'Hasil OCR:',
@@ -42,8 +43,8 @@ class ResultScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 12),
-            
-            // Teks hasil OCR
+
+            // Teks hasil OCR (biarkan baris baru apa adanya)
             Container(
               width: double.infinity,
               padding: const EdgeInsets.all(16),
@@ -53,15 +54,15 @@ class ResultScreen extends StatelessWidget {
                 border: Border.all(color: Colors.grey.shade300),
               ),
               child: Text(
-                recognizedText.isEmpty 
-                    ? 'Tidak ada teks yang terdeteksi' 
-                    : recognizedText,
+                recognizedText.isEmpty
+                    ? 'Tidak ada teks yang terdeteksi'
+                    : recognizedText, // tampilkan utuh (tanpa replaceAll)
                 style: const TextStyle(fontSize: 16),
               ),
             ),
             const SizedBox(height: 24),
-            
-            // Tombol kembali
+
+            // Tombol kembali untuk scan ulang
             SizedBox(
               width: double.infinity,
               child: ElevatedButton.icon(
@@ -75,6 +76,18 @@ class ResultScreen extends StatelessWidget {
             ),
           ],
         ),
+      ),
+
+      // Tombol mengambang untuk kembali ke HomeScreen
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pushAndRemoveUntil(
+            context,
+            MaterialPageRoute(builder: (_) => const HomeScreen()),
+            (route) => false, // hapus semua route di atas HomeScreen
+          );
+        },
+        child: const Icon(Icons.home),
       ),
     );
   }
